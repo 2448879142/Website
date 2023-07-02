@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.4/jquery.js"></script>
+    <script src="https://cdn.bootcss.com/marked/0.8.1/marked.min.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      @font-face {
+        font-family: "LEMONMILK-Medium";
+        src: url(../font/LEMONMILK-Medium.otf);
+      }
+      body {
+        background-color: #b9d2ee;
+      }
+      #line {
+        position: relative;
+      }
+
+      .header {
+        width: 100%;
+        display: block;
+        position: absolute;
+        padding-left: 50%;
+        padding-top: 200px;
+        background-color: #698bba;
+        box-shadow: #698bba 4px 0px 20px;
+        z-index: 1;
+      }
+
+      .header img {
+        width: 100px;
+        height: 100px;
+        transform: translate(-50%, -50%);
+        border-radius: 50px;
+        border: #698bba 1px solid;
+        box-shadow: #b9d2ee 1px 0 10px;
+      }
+
+      .header h2 {
+        text-align: center;
+        color: white;
+        letter-spacing: 7px;
+        transform: translate(-50%, -50%);
+        text-shadow:#b9d2ee 1px 0 5px, white 1px 0 2px;
+      }
+
+      .timeline {
+        position: absolute;
+        margin-top: 400px;
+        width: 100%;
+        padding-bottom: 200px;
+      }
+      .timeline::before {
+        content: " ";
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        margin-left: 50%;
+        transform: translate(-50%, 0);
+        z-index: 1;
+
+        width: 2px;
+        height: 100%;
+        background-color: #698bba;
+      }
+      .content img {
+        width: 480px;
+        height: 360px;
+      }
+      .item {
+        display: flex;
+        margin-left: calc(50% + 40px);
+        transition: all 0.5s;
+      }
+
+      .item:nth-child(even) {
+        justify-content: flex-end;
+        margin: 0 calc(50% + 40px) 0 0;
+      }
+      .content img {
+        box-shadow: #698bba 4px 0px 20px;
+      }
+      .content .content-title {
+        font-size: 66px;
+        color: #4593eb;
+        transform: translate(0, -40%);
+        margin-left: 20px;
+        text-shadow: #698bba 1px 1px 10px;
+      }
+      .content .content-desc {
+        color: white;
+        margin-top: -20px;
+        margin-left: 20px;
+      }
+      .item:hover {
+        text-shadow: #4593eb 1px 0 10px;
+      }
+      .footer {
+        position: absolute;
+        bottom: -150px;
+        width: 100%;
+        height: 100px;
+        background-color: #335faa;
+        box-shadow: #335faa 1px 0 5px;
+        z-index: 2;
+      }
+      .back {
+        position: absolute;
+        display: flex;
+        z-index: 10;
+        top: 20px;
+        right: 20px;
+        font-family: "LEMONMILK-Medium";
+      }
+      .back a {
+        display: flex;
+        padding: 5px;
+        justify-content: center;
+        align-items: center;
+        color: #4593eb;
+        border: #4593eb 2px solid;
+        border-radius: 10px;
+        text-decoration: none;
+        background-color: white;
+        
+        transition: .5s;
+      }
+      .back a:hover{
+        transform: scale(1.1);
+        box-shadow: #4593eb20 1px 0px 10px, #b9d2ee 1px 0px 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="line" id="line">
+      <div class="header">
+        <img src="../img/1310739.jpg" alt="头像" />
+        <h2 class="title">Catalog</h2>
+        <div class="back"><a href="javascript:history.back(-1)">back</a></div>
+      </div>
+      <div class="timeline">
+        <div class="item" data-text="《甘于------------》">
+          <div class="content">
+            <img src="../img/1310739.jpg" alt="" />
+            <h2 class="content-title">2022</h2>
+            <p class="content-desc">旅程总有一天会迎来终点，不必匆忙。</p>
+          </div>
+        </div>
+        <div class="item" data-text="《甘于------------》">
+          <div class="content">
+            <img src="../img/1310739.jpg" alt="" />
+            <h2 class="content-title">2022</h2>
+            <p class="content-desc">旅程总有一天会迎来终点，不必匆忙。</p>
+          </div>
+        </div>
+        <div class="item" data-text="《甘于------------》">
+          <div class="content">
+            <img src="../img/1310739.jpg" alt="" />
+            <h2 class="content-title">2022</h2>
+            <p class="content-desc">旅程总有一天会迎来终点，不必匆忙。</p>
+          </div>
+        </div>
+        <div class="item" data-text="《甘于------------》">
+          <div class="content">
+            <img src="../img/1310739.jpg" alt="" />
+            <h2 class="content-title">2022</h2>
+            <p class="content-desc">旅程总有一天会迎来终点，不必匆忙。</p>
+          </div>
+        </div>
+        <div class="item" data-text="《甘于------------》">
+          <div class="content">
+            <img src="../img/1310739.jpg" alt="" />
+            <h2 class="content-title">2022</h2>
+            <p class="content-desc">旅程总有一天会迎来终点，不必匆忙。</p>
+          </div>
+        </div>
+        <div class="footer"></div>
+      </div>
+    </div>
+  </body>
+  <script>
+    $.ajax({
+      url: "../abort.md",
+      success: function (data) {
+        document.getElementById("d").innerHTML = data;
+        console.log(data);
+        document.getElementById("d").innerHTML = marked(data);
+      },
+    });
+  </script>
+</html>
