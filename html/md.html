@@ -23,6 +23,7 @@
         loadNavbar: true,
         auto2top: true,
         loadNavbar: true,
+        subMaxLevel: 3,
         count: {
           countable: true,
           fontsize: "0.9em",
@@ -31,7 +32,7 @@
         },
         search: {
           maxAge: 86400000, // 过期时间，单位毫秒，默认一天
-          paths: ['/md/'], // or 'auto'
+          paths: "auto", // or 'auto'
           // 支持本地化
           placeholder: "搜索",
           noData: "找不到结果",
