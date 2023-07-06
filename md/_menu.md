@@ -1,27 +1,31 @@
 * 主页
 
   * ArcGIS
-
-  * BAT 
-
-  * Excel
+    * [笔记](/ArcGIS/ArcGIS_Notes)
+    * [实例](/ArcGIS/ArcGIS_Examples)
 
   * GitHub
-
-    * [上传代码至仓库](/GitHub/20230702_github_上传仓库)
-
-    * [无法读取远程存储库](/GitHub/20230702_github_权限拒绝访问)
-
-    * [更新远程仓库报错](/GitHub/20230703_github_更新远程仓库报错)
+    * [笔记](/GitHub/GitHub_Notes)
+    * [实例](/GitHub/GitHub_Examples)
+  
+  * Linux
+    * [笔记](/Linux/Linux_Notes)
+    * [实例](/Linux/Linux_Examples)
 
   * MarkDown
+    * [笔记](/MarkDown/MarkDown_Notes)
+    * [实例](/MarkDown/MarkDown_Examples)
 
-    * [Download-MD文档中点击下载附件](/MarkDown/20230701_markdown_downloadfile)
+  * Office
+    * [笔记](/Office/Office_Notes)
+    * [实例](/Office/Office_Examples)
 
   * Python
+    * [笔记](/Python/Python_Notes)
+    * [实例](/Python/Python_Examples)
 
   * Web
+    * [笔记](/Web/Web_Notes)
+    * [实例](/Web/Web_Examples)
 
-    * [全景查看器](/Web/20230702_web_全景查看器)
-
-  * [Abort](abort)
+  * [**Abort**](abort)
