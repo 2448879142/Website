@@ -18,7 +18,9 @@
 
   * Office
     * [笔记](/Office/Office_Notes)
-    * [实例](/Office/Office_Examples)
+    * [Word](/Office/Office_Examples_Word)
+    * [Excel](/Office/Office_Examples_Excel)
+    * [PPT](/Office/Office_Examples_PPT)
 
   * Python
     * [笔记](/Python/Python_Notes)
