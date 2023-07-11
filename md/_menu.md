@@ -26,6 +26,9 @@
     * [笔记](/Python/Python_Notes)
     * [实例](/Python/Python_Examples)
 
+  * StableDiffusion
+    * [SD本地化部署](/StableDiffusion/Stable_Diffusion安装)
+
   * Web
     * [笔记](/Web/Web_Notes)
     * [实例](/Web/Web_Examples)

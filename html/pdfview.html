@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 100%;
+        height: calc(100vh - 5px);
+        margin: auto 0;
+      }
+      iframe{
+        padding: 0;
+        border: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <iframe class="iframe1" :src="../plugins/DPFjs/web/viewer.html?=1.pdf" frameborder="0" width="100%" height="100%"></iframe>
+    <script src="../plugins/DPFjs/build/pdf.js"></script>
+    <script src="../plugins/DPFjs/build/pdf.worker.js"></script> -->
+    <!-- <iframe
+      src="../html/1.pdf"
+      type="application/pdf"
+      width="100%"
+      height="100%"
+    
+    ></iframe> -->
+    <script>
+      var url = document.location.toString();
+      console.log(url)
+      const iframe = document.createElement('iframe');
+      iframe.width = '100%'
+      iframe.height = '100%'
+      iframe.src = url.split('?pdf=')[1]
+      document.body.appendChild(iframe) // 在body中加载 iframes 也可以使用页面元素加载 if
+    </script>
+  </body>
+</html>

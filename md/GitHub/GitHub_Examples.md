@@ -1,16 +1,15 @@
 # 实例
-----------------
+
+---
 
 ## 如何上传 GitHub
 
 ### 1.git 安装
 
-
 - 下载并安装 Git
 - [git 教程-菜鸟教程](https://www.runoob.com/git/git-tutorial.html)
 
 ### 2. git 使用
-
 
 ##### 设置用户签名
 
@@ -74,45 +73,25 @@ git push -u origin master
 
 ```
 
+--------------
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
----------------------
 ## 权限拒绝访问
+
 ### fatal: Could not read from remote repository
 
 - 解决git@github.com: Permission denied (publickey). fatal: Could not read from remote repository.
 - 输入以下代码重新生成 shh key 一路回车即可
-- ```"C:\Users\24488\.ssh\id_rsa.pub"```，复制文件里面的代码
-- 登录GitHub，进入Settings,``` SHH and GPG keys>New SSH key```,将复制的代码，新建一个key
+- `"C:\Users\24488\.ssh\id_rsa.pub"`，复制文件里面的代码
+- 登录 GitHub，进入 Settings,` SHH and GPG keys>New SSH key`,将复制的代码，新建一个 key
 - [问题参考文档](https://blog.csdn.net/W_317/article/details/106518894)
 
 ```git
 $ ssh-keygen -t rsa -C "邮箱"
 ```
 
+-------------
 
-
-
-
-
-
-
------------------------------
-# 更新远程仓库报错
-
+## 更新远程仓库报错
 
 ### error: failed to push some refs to ‘xxx‘ 报错
 
@@ -123,21 +102,20 @@ $ ssh-keygen -t rsa -C "邮箱"
 > - hint: (e.g., 'git pull ...') before pushing again.
 > - hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 
-
 ### 解决办法
 
 - git pull 命令用于从远程获取代码并合并本地的版本;
 
-> git pull 使用了强制push的方式提交代码，这样会带来版本覆盖的问题.
+> git pull 使用了强制 push 的方式提交代码，这样会带来版本覆盖的问题.
 
 - git push 命令用于从将本地的分支版本上传到远程并合并.
 
 > 本办法会合并分支，谨慎操作.
 
+-------------
 
+## gitClone
 
-
-
-
-
-----------------------------
+```
+git clone 'url'
+```
