@@ -23,6 +23,8 @@
   * StableDiffusion
     * [SD本地化部署](/StableDiffusion/Stable_Diffusion安装)
 
+  * Uni_app
+    * [LeafletJS Demo](/Uni_app/Leaflet.md)
   * Web
     * [笔记](/Web/Web_Notes)
 
