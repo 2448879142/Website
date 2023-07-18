@@ -2,7 +2,7 @@
 
 ## 视频教程
 
-来源：[**Nenly同学**]([Mac系统有救了！入门AI绘画，Stable Diffusion详细本地部署教程！自主安装全解（附一键解压文件与前置安装包）| 解决各种安装报错卡进度问题_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1Us4y1X75d/?spm_id_from=333.788&vd_source=44dd29d35ca204257e05e0e3275e55fe))
+来源：**Nenly同学**([Mac系统有救了！入门AI绘画，Stable Diffusion详细本地部署教程！自主安装全解（附一键解压文件与前置安装包）| 解决各种安装报错卡进度问题_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1Us4y1X75d/?spm_id_from=333.788&vd_source=44dd29d35ca204257e05e0e3275e55fe))
 
 本文档参考上述视频总结
 
