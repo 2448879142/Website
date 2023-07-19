@@ -2,6 +2,7 @@
 
   * ArcGIS
     * [ArcGIS批处理](/ArcGIS/ArcGIS批处理.md)
+    * [数据库合并](/ArcGIS/数据库合并.md)
 
   * GitHub
     * [笔记](/GitHub/GitHub_Notes)
