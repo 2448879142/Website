@@ -8,6 +8,21 @@
     display: none;
 }
 
+.book a{
+    text-decoration: none;
+    color: rgb(30, 196, 154) !important;
+    display: block;
+    /* box-shadow: #b9d2ee 1px 0 5px; */
+    line-height: 50px;
+    padding: 0 50px;
+    margin-top: 10px;
+    transition:background-color .3s;
+}
+.book a:hover{
+    color: #4593eb !important;
+    background-color: #b9d2ee;
+    box-shadow: #698bba 5px 2px 10px;
+}
 .container{
     width: 100%;
     background-size: cover;

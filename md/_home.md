@@ -16,4 +16,8 @@
 
 在线的文档编写网站有许多，甚至编写富文本的功能都非常齐全，但是还是选择自己搭建一个，即便是简陋的，也是乐趣所在。
 
+### 书单
 
+<div class='book'>
+<a href="./pdfview.html?pdf=d2l-zh-pytorch.pdf">动手学深度学习</a>
+<div>

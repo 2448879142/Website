@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    
     <style>
       * {
         margin: 0;
@@ -34,11 +34,14 @@
     ></iframe> -->
     <script>
       var url = document.location.toString();
-      console.log(url)
       const iframe = document.createElement('iframe');
+      const title = document.createElement('title');
+      
       iframe.width = '100%'
       iframe.height = '100%'
-      iframe.src = url.split('?pdf=')[1]
+      iframe.src ='../pdf/' + url.split('?pdf=')[1]
+      title.innerText = url.split('?pdf=')[1]; // title for the browser tab. 描述当你的电脑端品质的显示器不支
+      document.body.appendChild(title) 
       document.body.appendChild(iframe) // 在body中加载 iframes 也可以使用页面元素加载 if
     </script>
   </body>
