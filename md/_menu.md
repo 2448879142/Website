@@ -1,8 +1,9 @@
-* 主页
+* [**主页**](/)
 
   * ArcGIS
     * [ArcGIS批处理](/ArcGIS/ArcGIS批处理.md)
     * [数据库合并](/ArcGIS/数据库合并.md)
+    * [影像按地区覆盖整理分类](/ArcGIS/影像按地区覆盖整理分类.md)
 
   * GitHub
     * [笔记](/GitHub/GitHub_Notes)
@@ -15,7 +16,8 @@
 
   * Office
     * [Word](/Office/Office_Notes_Word)
-    * [Excel](/Office/Office_Notes_Excel)
+    * [Excel函数公式](/Office/Excel函数公式)
+    * [Excel合同自动预警提醒](/Office/Excel合同自动预警提醒)
     * [PPT](/Office/Office_Notes_PPT)
 
   * Python
