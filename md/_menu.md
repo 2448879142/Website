@@ -41,5 +41,7 @@
     * [LeafletJS Demo](/Uni_app/Leaflet.md)
   * Web
     * [笔记](/Web/Web_Notes)
+    * [全景查看器工具](/web/全景查看器工具)
+    * [DOM对象左右拖动](/Web/DOM对象左右拖动)
 
   * [**Abort**](abort)

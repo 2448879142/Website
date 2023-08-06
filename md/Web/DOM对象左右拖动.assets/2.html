@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #table {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="table" style="width:100vw; height:100px; overflow: auto;box-sizing: border-box;">
+        <div style="width: 6000px;height: 100%; background-color: aquamarine;">
+            仲間に冷たく暴力を振るわれて半年、最近あまり泣かなくなって、だんだんよくなってきた……以前はどんなに楽しかったか、今はどんなに悲しいか。人間花火の日常から、目を赤くして別れを告げ、お互いの世界に消えていくまで、痛くて、難しい。今日はKFC狂乱木曜日,支付宝転我50,慰撫我支離滅裂的心 </div>
+    </div>
+    <script>
+        isDragging = false; //判断是否启用移动事件
+        var downX = null;   //按下鼠标的坐标
+        var div = document.getElementById('table'); //获取DOM对象
+        var startScrollLeft = div.scrollLeft; // 初始化当前滚动条所在位置
+        div.addEventListener("mousemove", function (e) {
+            if (isDragging) {
+                // 在这里处理鼠标拖动滚动事件的逻辑
+                // console.log('移动',e.clientX - downX)
+                // console.log('当前滚动条所在位置', div.scrollLeft)
+                div.scrollLeft = startScrollLeft - (e.clientX - downX);
+                if (div.scrollLeft <= 0) {
+                    isDragging = false;
+                }
+            }
+        });
+
+        div.addEventListener("mousedown", function (e) { //鼠标按下，记录初始位置
+            isDragging = true;
+            downX = e.clientX;
+            startScrollLeft = document.getElementById('table').scrollLeft;
+            // console.log('---------down-------------')
+        });
+
+        div.addEventListener("mouseup", function (e) { //鼠标松开事件
+            isDragging = false;
+            downX = null;
+            // console.log('---------up-------------')
+        });
+
+        div.addEventListener('mouseout', function (e) {//鼠标移出，初始化
+            // console.log('移出')
+            isDragging = false;
+            downX = null;
+            startScrollLeft = div.scrollLeft;
+        });
+
+    </script>
+
+</body>
+
+</html>

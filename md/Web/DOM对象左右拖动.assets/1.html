@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #div {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div" style="width:100vw;height: 100px; overflow: auto;box-sizing: border-box;">
+        <div style="width: 6000px;height: 100%; background-color: aquamarine;">
+            你好，我是高中生侦探工藤新一，我刚在游乐场被打晕，被黑衣组织强迫灌下了APTX-4869，现在身体竟然变成了小孩子，目前我吃了灰原哀开发的解药试作品都起不到作用，现在听说肯德基疯狂星期四9.9元的小酥肉有特殊作用，希望大家能够帮我一忙。
+        </div>
+    </div>
+    <script>
+        isDragging = false; //判断是否启用移动事件
+        var downX = null;   //按下鼠标的坐标
+        var div = document.getElementById('div'); //获取DOM对象
+        var startScrollLeft = div.scrollLeft; // 初始化当前滚动条所在位置
+        div.addEventListener("mousemove", function (e) {
+            if (isDragging) {
+                // 在这里处理鼠标拖动滚动事件的逻辑
+                // console.log('移动',e.clientX - downX)
+                // console.log('当前滚动条所在位置', div.scrollLeft)
+                div.scrollLeft = startScrollLeft + (e.clientX - downX);
+                if (div.scrollLeft <= 0) {
+                    isDragging = false;
+                }
+            }
+        });
+
+        div.addEventListener("mousedown", function (e) { //鼠标按下，记录初始位置
+            isDragging = true;
+            downX = e.clientX;
+            startScrollLeft = document.getElementById('div').scrollLeft;
+            // console.log('---------down-------------')
+        });
+
+        div.addEventListener("mouseup", function (e) { //鼠标松开事件
+            isDragging = false;
+            downX = null;
+            downY = null;
+            // console.log('---------up-------------')
+        });
+
+        div.addEventListener('mouseout', function (e) {//鼠标移出，初始化
+            // console.log('移出')
+            isDragging = false;
+            downX = null;
+            startScrollLeft = div.scrollLeft;
+        });
+
+    </script>
+
+</body>
+
+</html>
