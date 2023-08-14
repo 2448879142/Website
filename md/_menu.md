@@ -35,6 +35,7 @@
 
   * Python
     * [笔记](/Python/Python_Notes)
+    * [pyTorch](/Python/pyTorch入门)
 
   * StableDiffusion
     * [SD本地化部署](/StableDiffusion/Stable_Diffusion安装)

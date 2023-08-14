@@ -6,7 +6,7 @@
 pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 ~~~
 
-![image-20230722211205083](pyTorch入门.assets/image-20230722211205083.png)
+![1692022793846.png](https://img1.imgtp.com/2023/08/14/iH8Zav9V.png)
 
 ## 安装torch
 
@@ -17,9 +17,9 @@ pip install torch
 pip install numpy
 ~~~
 
-![image-20230722211332311](pyTorch入门.assets/image-20230722211332311.png)
+![1692022925589.png](https://img1.imgtp.com/2023/08/14/g5igJWhZ.png)
 
-![image-20230722211357479](pyTorch入门.assets/image-20230722211357479.png)
+![1692022972716.png](https://img1.imgtp.com/2023/08/14/2EmyX3Qd.png)
 
 ## 引入
 
@@ -29,7 +29,7 @@ pip install numpy
 import torch
 ~~~
 
-![image-20230722211558326](pyTorch入门.assets/image-20230722211558326.png)
+![1692022996309.png](https://img1.imgtp.com/2023/08/14/yIxOQoHv.png)
 
 ## 基本概念
 

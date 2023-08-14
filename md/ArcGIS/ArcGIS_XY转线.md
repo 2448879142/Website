@@ -50,4 +50,4 @@ arcpy.XYToLine_management(input_table,out_lines,
 
 ## 工具箱
 
-![image-20230730132053779](ArcGIS_XY转线.assets/image-20230730132053779.png)
+![1692021930671.png](https://img1.imgtp.com/2023/08/14/7qbF99EG.png)

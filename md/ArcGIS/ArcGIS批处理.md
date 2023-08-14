@@ -24,32 +24,33 @@
 
 利用ArcGIS自带批处理工具进行操作，ArcGIS ToolBox中每个工具其实都自带批处理工具。
 
-![image-20230718212204534](ArcGIS批处理.assets/image-20230718212204534.png)
+![1692022023999.png](https://img1.imgtp.com/2023/08/14/K4ON79vR.png)
 
 ## 使用方法
 
 右击你要使用的工具，打开对应工具，对比正常打开和批处理打开的界面，有所不同。
 
-![image-20230718212455579](ArcGIS批处理.assets/image-20230718212455579.png)
+![1692022056198.png](https://img1.imgtp.com/2023/08/14/fYB2aNHy.png)
 
-![image-20230718212439606](ArcGIS批处理.assets/image-20230718212439606.png)
+![1692022056199.png](https://img1.imgtp.com/2023/08/14/08HRgJUc.png)
 
 将你要处理的大量数据添加到里面即可操作，这时可能很多人的输出路径是默认路径，当然你不改，处理完后，从这个路径里把文件拷贝出来也不是不行。
 
-![image-20230718212821052](ArcGIS批处理.assets/image-20230718212821052.png)
+![1692022083282.png](https://img1.imgtp.com/2023/08/14/cjIp83T2.png)
 
 但我们要清楚，ArcGIS有个基础知识点，工作空间概念，我们完全可以通过修改当前工作空间来更改默认输出位置。
 
-![image-20230718213154906](ArcGIS批处理.assets/image-20230718213154906.png)
+![1692022208385.png](https://img1.imgtp.com/2023/08/14/R8SpsTWL.png)
 
-![image-20230718213231243](ArcGIS批处理.assets/image-20230718213231243.png)
+![1692022208384.png](https://img1.imgtp.com/2023/08/14/Vliv5rKo.png)
 
 修改好后，我们重新导入数据，发现路径修改了。
 
-![image-20230718213339452](ArcGIS批处理.assets/image-20230718213339452.png)
+![1692022653524.png](https://img1.imgtp.com/2023/08/14/PSm3BNfg.png)
+
 
 点击确定运行工具，等待任务处理完成，我们就可以在指定文件夹下，打开文件了。
 
-![image-20230718213440835](ArcGIS批处理.assets/image-20230718213440835.png)
+![1692022684055.png](https://img1.imgtp.com/2023/08/14/2Fq8V8wN.png)
 
-![image-20230718213511643](ArcGIS批处理.assets/image-20230718213511643.png)
+![1692022208384.png](https://img1.imgtp.com/2023/08/14/K5DQhANw.png)
